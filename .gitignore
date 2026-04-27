@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.DS_Store
+.ipynb_checkpoints/
+.claude/
+
+# trained sklearn models (regenerate with: python -m ga_fairness_tester.train_sklearn_models)
+# RF in particular exceeds GitHub's 100 MB single-file limit
+models/*.pkl
+
+# experiment scratch outputs that are reproducible from source
+results/pilot.csv
+results/pilot_stats.csv
+results/full_run.log
+
+# bulky local clone of upstream lab repo
+lab_repo/
+
+# course materials, not project artifacts
+ISE_coursework.pdf
+lab4.pdf
